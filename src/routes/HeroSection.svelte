@@ -9,7 +9,8 @@
 <style>
     @font-face {
         font-family: "ChenYuluoyan";
-        src: url("/ChenYuluoyan-2.0-Thin.ttf") format("truetype");
+        /* src: url("/ChenYuluoyan-2.0-Thin.ttf") format("truetype"); */
+        src: url("/test.ttf") format("truetype");
         font-weight: normal;
         font-style: normal;
     }

@@ -2,14 +2,14 @@
     import Container from "$lib/Container.svelte";
     import HeroSection from "./HeroSection.svelte";
     import Navbar from "$lib/Navbar.svelte";
-    import Cover from "$lib/assets/cover.webp";
+    import { base } from "$app/paths";
 </script>
 
 <Navbar />
 <Container>
     <HeroSection />
     <div class="cover">
-        <img src={Cover} alt="cover" />
+        <img src="{base}/cover.webp" alt="cover" />
     </div>
 </Container>
 

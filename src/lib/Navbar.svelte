@@ -1,21 +1,25 @@
+<script lang="ts">
+    import { base } from "$app/paths";
+</script>
+
 <header>
     <nav>
         <h2 class="club-name">
-            <a href="/">CKEFGISC 29th</a>
+            <a href="{base}/">CKEFGISC 29th</a>
         </h2>
 
         <ul class="navlinks">
             <li class="navlink">
-                <a href="/courses">課程</a>
+                <a href="{base}/courses">課程</a>
             </li>
             <li class="navlink">
-                <a href="/activities">活動</a>
+                <a href="{base}/activities">活動</a>
             </li>
             <li class="navlink">
-                <a href="/faq">FAQ</a>
+                <a href="{base}/faq">FAQ</a>
             </li>
             <li class="navlink">
-                <a href="/about">關於</a>
+                <a href="{base}/about">關於</a>
             </li>
         </ul>
     </nav>
