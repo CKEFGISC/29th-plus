@@ -1,0 +1,1 @@
+import{f as m,a as n}from"../chunks/lCyE_gTp.js";import"../chunks/C5-Ai_O8.js";import{f as i,$ as s,s as e}from"../chunks/BLPRTqqu.js";import{h as f}from"../chunks/D6p3fv04.js";import{N as p,C as d}from"../chunks/BmPvwPhB.js";var h=m("<!> <!>",1);function g(r){var a=h();f(c=>{s.title="關於 | CKEFGISC 29th"});var o=i(a);p(o,{});var t=e(o,2);d(t,{}),n(r,a)}export{g as component};
