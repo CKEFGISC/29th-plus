@@ -1,1 +1,0 @@
-import{f as m,a as n}from"../chunks/BuBgFyYF.js";import"../chunks/DAQHk3Im.js";import{f as i,$ as s,s as e}from"../chunks/VR01tqlh.js";import{h as f}from"../chunks/Bb_RythY.js";import{N as p,C as d}from"../chunks/pKTn99Ym.js";var h=m("<!> <!>",1);function g(r){var a=h();f(c=>{s.title="活動 | CKEFGISC 29th"});var o=i(a);p(o,{});var t=e(o,2);d(t,{}),n(r,a)}export{g as component};
