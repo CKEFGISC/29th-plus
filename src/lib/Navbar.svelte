@@ -120,6 +120,7 @@
             display: none;
             flex-direction: column;
             position: absolute;
+            z-index: 2;
             top: 67px;
             left: 0;
             width: 100%;
