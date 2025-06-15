@@ -1,69 +1,75 @@
 <script lang="ts">
     import { base } from "$app/paths";
+
+    let open = false;
+
+    function toggle_menu() {
+        open = !open;
+    }
 </script>
 
-<header>
-    <nav>
-        <h2 class="club-name">
-            <a href="{base}/">CKEFGISC 29th</a>
-        </h2>
+<nav>
+    <h2 class="club-name">
+        <a href="{base}/">CKEFGISC 29th</a>
+    </h2>
 
-        <ul class="navlinks">
-            <li class="navlink">
-                <a href="{base}/courses">課程</a>
-            </li>
-            <li class="navlink">
-                <a href="{base}/activities">活動</a>
-            </li>
-            <li class="navlink">
-                <a href="{base}/faq">FAQ</a>
-            </li>
-            <li class="navlink">
-                <a href="{base}/about">關於</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <div class="hamburger-toggle" on:click={toggle_menu}>
+        <span class="bar-1"></span>
+        <span class="bar-2"></span>
+        <span class="bar-3"></span>
+    </div>
+
+    <ul class:open={open} class="navlinks">
+        <li class="navlink">
+            <a href="{base}/courses">課程</a>
+        </li>
+        <li class="navlink">
+            <a href="{base}/activities">活動</a>
+        </li>
+        <li class="navlink">
+            <a href="{base}/faq">FAQ</a>
+        </li>
+        <li class="navlink">
+            <a href="{base}/about">關於</a>
+        </li>
+    </ul>
+</nav>
 
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
     .club-name,
     .club-name > a,
     .club-name > a:visited {
         color: white;
         font-family: "JetBrains Mono", sans-serif;
-        font-size: xx-large;
         font-weight: 500;
         /* border: 1px solid blue; */
         text-decoration: none;
     }
 
-    header {
-        display: flex;
-        justify-content: center;
-        width: 100vw;
-        padding: 20px 0;
-        /* border: 1px solid black; */
-    }
-
     nav {
         display: flex;
+        width: 99vw;
         justify-content: space-between;
+        align-items: center;
+        padding: 0 15vw;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        height: 67px;
     }
 
     .navlinks {
+        list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        list-style: none;
-        /* border: 1px solid red; */
-        width: 20vw;
+        gap: 30px;
     }
 
-    .navlink {
+    .navlink a {
+        font-size: 18px;
+        font-weight: 600;
         font-family: "Noto Sans TC";
-        font-size: 1.5rem;
     }
 
     .navlink > a,
@@ -77,21 +83,61 @@
         color: rgb(241, 211, 110);
     }
 
+    .hamburger-toggle span {
+        height: 3px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .hamburger-toggle {
+        width: 29px;
+        height: 21px;
+        top: 30px;
+        right: 2rem;
+        display: none;
+        position: absolute;
+        /*預設不顯示*/
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        /*因為bar有長有短，所以靠左*/
+    }
+
     @media (max-width: 767px) {
+        .hamburger-toggle {
+            display: flex;
+        }
+
+        .hamburger-toggle :hover {
+            cursor: pointer;
+        }
         nav {
-            width: 90vw;
+            padding: 0 5vw;
+        }
+
+        .navlinks {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 67px;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            text-align: center;
+        }
+        .navlinks li {
+            padding: 20px;
+        }
+
+        .navlinks.open {
+            display: block;
         }
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
         nav {
-            width: 80vw;
-        }
-    }
-
-    @media (min-width: 992px) {
-        nav {
-            width: 70vw;
+            padding: 0 5vw;
         }
     }
 </style>
