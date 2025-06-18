@@ -1,1 +1,0 @@
-import{f as s,a as i}from"./XC2sKup2.js";import"./CJPa9SOW.js";import{W as e,X as m}from"./BZXMl3f8.js";import{s as n}from"./BlFWr7LO.js";var d=s('<div class="container svelte-1auxkdy"><!></div>');function h(o,r){var a=d(),t=e(a);n(t,r,"default",{},f=>{}),m(a),i(o,a)}export{h as C};

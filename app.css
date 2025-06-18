@@ -6,7 +6,19 @@
     --background-color: black;
     --font-color: white;
     --content-font: "Noto Sans TC";
-    --font-size-xxl: 2.5rem;
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
+    --text-2xl: 24px;
+    --text-3xl: 30px;
+    --text-4xl: 36px;
+    --text-5xl: 42px;
+    --text-6xl: 48px;
+    --text-7xl: 60px;
+    --text-8xl: 72px;
+    --text-9xl: 84px;
 }
 
 * {
