@@ -3,9 +3,12 @@
 
 :root {
     font-size: 16px;
-    --background-color: black;
     --font-color: white;
-    --content-font: "Noto Sans TC";
+    --font-1: "Noto Sans TC", sans-serif;
+    --font-2: "JetBrains Mono", sans-serif;
+    --color-10: hsl(360, 100%, 100%);
+    --color-30: hsl();
+    --color-90: hsl(360, 100%, 0%); 
     --text-xs: 12px;
     --text-sm: 14px;
     --text-base: 16px;
@@ -19,6 +22,18 @@
     --text-7xl: 60px;
     --text-8xl: 72px;
     --text-9xl: 84px;
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+    --spacing-5: 24px;
+    --spacing-6: 32px;
+    --spacing-7: 40px;
+    --spacing-8: 48px;
+    --spacing-9: 56px;
+    --spacing-10: 64px;
+    --spacing-11: 80px;
+    --spacing-12: 96px;
 }
 
 * {
@@ -34,15 +49,19 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--color-90);
     color: var(--font-color);
 }
 
 p {
-    font-family: "Noto Sans TC";
+    font-family: var(--font-1);
 }
 
 nav {
     margin-left: auto;
     margin-right: auto;
+}
+
+a {
+    text-decoration: none;
 }
