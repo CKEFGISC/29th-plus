@@ -53,10 +53,6 @@ body {
     color: var(--font-color);
 }
 
-p {
-    font-family: var(--font-1);
-}
-
 nav {
     margin-left: auto;
     margin-right: auto;
