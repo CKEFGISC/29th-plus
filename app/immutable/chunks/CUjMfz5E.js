@@ -1,0 +1,1 @@
+import{h as a,d as l}from"./BOSc8kk9.js";function o(i,t,d,n,r){var f;a&&l();var e=(f=t.$$slots)==null?void 0:f[d],s=!1;e===!0&&(e=t.children,s=!0),e===void 0?r!==null&&r(i):e(i,s?()=>n:n)}export{o as s};

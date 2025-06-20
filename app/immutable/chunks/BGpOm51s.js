@@ -1,0 +1,1 @@
+import{f as s,a as i}from"./sawmfbxS.js";import"./BDeF_3TY.js";import{ab as e,ac as m}from"./BOSc8kk9.js";import{s as n}from"./CUjMfz5E.js";var d=s('<div class="container svelte-gqzwh0"><!></div>');function h(o,r){var a=d(),t=e(a);n(t,r,"default",{},f=>{}),m(a),i(o,a)}export{h as C};
