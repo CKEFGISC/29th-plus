@@ -26,35 +26,29 @@
         <li class="navlink">
             <a href="{base}/activities">活動</a>
         </li>
-        <li class="navlink">
-            <a href="{base}/faq">FAQ</a>
-        </li>
-        <li class="navlink">
+       <li class="navlink">
             <a href="{base}/about">關於</a>
         </li>
     </ul>
 </nav>
 
 <style>
-
     .club-name,
     .club-name > a,
     .club-name > a:visited {
-        color: white;
-        font-family: "JetBrains Mono", sans-serif;
-        font-weight: 500;
-        /* border: 1px solid blue; */
+        color: var(--font-color);
+        font-family: var(--font-2);
+        font-weight: 700;
         text-decoration: none;
     }
 
     nav {
         display: flex;
-        width: 99vw;
+        width: 95vw;
         justify-content: space-between;
         align-items: center;
         padding: 0 15vw;
-        margin-top: 10px;
-        margin-bottom: 40px;
+        margin-top: var(--spacing-4);
         height: 67px;
     }
 
@@ -63,20 +57,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 30px;
-    }
-
-    .navlink a {
-        font-size: 18px;
-        font-weight: 600;
-        font-family: "Noto Sans TC";
+        gap: var(--spacing-8);
     }
 
     .navlink > a,
     .navlink > a:visited {
-        color: white;
+        font-family: var(--font-1);
+        font-size: var(--text-xl);
+        font-weight: 600;
+        color: var(--font-color);
         text-decoration: none;
-        font-weight: 400;
     }
 
     .navlink > a:hover {
@@ -92,9 +82,9 @@
 
     .hamburger-toggle {
         width: 29px;
-        height: 21px;
-        top: 30px;
-        right: 2rem;
+        height: 20px;
+        top: 22px;
+        right: var(--spacing-3);
         display: none;
         position: absolute;
         /*預設不顯示*/
@@ -113,7 +103,7 @@
             cursor: pointer;
         }
         nav {
-            padding: 0 5vw;
+            padding: 0 2.5vw;
         }
 
         .navlinks {
@@ -124,11 +114,11 @@
             top: 67px;
             left: 0;
             width: 100%;
-            background-color: black;
+            background-color: var(--color-90);
             text-align: center;
         }
         .navlinks li {
-            padding: 20px;
+            padding: var(--spacing-4);
         }
 
         .navlinks.open {
