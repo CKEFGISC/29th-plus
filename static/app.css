@@ -1,18 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+    font-size: 16px;
+    --font-color: white;
+    --font-1: "Noto Sans TC", sans-serif;
+    --font-2: "JetBrains Mono", sans-serif;
+    --color-10: hsl(360, 100%, 100%);
+    --color-30: hsl();
+    --color-90: hsl(360, 100%, 0%); 
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
+    --text-2xl: 24px;
+    --text-3xl: 30px;
+    --text-4xl: 36px;
+    --text-5xl: 42px;
+    --text-6xl: 48px;
+    --text-7xl: 60px;
+    --text-8xl: 72px;
+    --text-9xl: 84px;
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+    --spacing-5: 24px;
+    --spacing-6: 32px;
+    --spacing-7: 40px;
+    --spacing-8: 48px;
+    --spacing-9: 56px;
+    --spacing-10: 64px;
+    --spacing-11: 80px;
+    --spacing-12: 96px;
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     position: relative;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--color-90);
+    color: var(--font-color);
 }
 
-p {
-   font-family: 'Noto Sans TC';
+nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
 }
