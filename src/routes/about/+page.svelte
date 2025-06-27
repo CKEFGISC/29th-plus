@@ -1,6 +1,7 @@
 <script lang="ts">
     import Footer from "$lib/Footer.svelte";
     import Navbar from "$lib/Navbar.svelte";
+    import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -11,7 +12,7 @@
 <div class="container">
     <div class="blocks">
         <div class="about-ckefgisc block">
-            <img src="/29th-plus/ckefgisc.webp" alt="CKEISC 44th" class="ckeisc-logo" />
+            <img src="{base}/ckefgisc.webp" alt="CKEISC 44th" class="ckeisc-logo" />
             <div class="info">
                 <h1>建北電資</h1>
                 <p>建北電資為建中電研和北一資研兩社組成的大社團，至今已是橫跨三十年的大家庭。</p>
@@ -19,7 +20,7 @@
             </div>
         </div>
         <div class="about-ckeisc block">
-            <img src="/29th-plus/ckeisc_44th.jpg" alt="" />
+            <img src="{base}/ckeisc_44th.jpg" alt="" />
             <div class="info">
                 <h1>建中電研</h1>
                 <p>建中電研為建中首屈一指的學術性社團，由一群程式愛好者組成。</p>
@@ -27,7 +28,7 @@
             </div>
         </div>
         <div class="about-fgisc block">
-            <img src="/29th-plus/fgisc_38th.jpg" alt="" />
+            <img src="{base}/fgisc_38th.jpg" alt="" />
             <div class="info">
                 <h1>北一資研</h1>
                 <p>北一資研是以程式為主題的學術性社團。 </p>
@@ -42,6 +43,7 @@
     * {
         font-family: var(--font-1);
     }
+    
     .container {
         display: flex;
         justify-content: center;

@@ -14,7 +14,7 @@ const config = {
 		appDir: 'app', // Required as the default is _app
 		adapter: adapter(),
 		paths: {
-			base: '/29th-plus',
+			base: '',
 		}
 	}
 };

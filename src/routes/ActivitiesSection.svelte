@@ -5,7 +5,7 @@
 
 
 <div class="course-section">
-    <Section title="活動" description="認識知心好友 & 各路電神" link="/29th-plus/activities" />
+    <Section title="活動" description="認識知心好友 & 各路電神" link="{base}/activities" />
     <div class="cover">
         <img src="{base}/activity.jpg" alt="cover" />
     </div>

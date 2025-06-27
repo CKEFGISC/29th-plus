@@ -4,7 +4,7 @@
 </script>
 
 <div class="course-section">
-    <Section title="課程" description="淺顯易懂、深入淺出" link="/29th-plus/courses" />
+    <Section title="課程" description="淺顯易懂、深入淺出" link="{base}/courses" />
     <div class="cover">
         <img src="{base}/course.jpg" alt="cover" />
     </div>
