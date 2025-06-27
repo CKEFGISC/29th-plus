@@ -16,6 +16,9 @@
 </details>
 
 <style>
+    * {
+        font-family: "Noto Sans TC";
+    }
     summary {
         list-style: none;
         margin-bottom: 15px;
