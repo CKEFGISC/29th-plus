@@ -1,7 +1,6 @@
 <div class="hero-section">
     <h1 class="title">
-        <span class="program">程式</span>
-        路上有你和我
+        <span class="program">程式</span>路上有你和我
     </h1>
     <blockquote>建北電資是個溫暖的大家庭</blockquote>
 </div>
@@ -16,42 +15,78 @@
     }
 
     .hero-section {
-        font-family: "ChenYuluoyan";
+        font-family: "ChenYuluoyan", sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
-        margin: 50px 0;
+        padding: var(--spacing-6) 0;
+        gap: var(--spacing-5);
     }
 
     .title {
-        color: white;
-        font-size: 5rem;
+        color: var(--font-color);
+        font-size: var(--text-9xl);
         font-weight: 300;
+        letter-spacing: -1.5px;
     }
 
     blockquote {
-        color: white;
+        color: var(--font-color);
         font-size: 2.5rem;
     }
 
     .program {
-        color: #e9ce56;
+        color: hsl(48, 80%, 60%);
+    }
+
+    @media (min-width: 992px) {
+        .hero-section {
+            margin: var(--spacing-9) 0;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .hero-section {
+            margin: var(--spacing-8) 0;
+        }
+        .title {
+            font-size: var(--text-8xl);
+        }
     }
 
     @media (max-width: 767px) {
+        .hero-section {
+            margin: var(--spacing-7) 0;
+        }
         .title {
-            font-size: 4rem;
+            font-size: var(--text-7xl);
         }
 
         blockquote {
-            font-size: 2rem;
+            font-size: var(--text-3xl);
         }
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
+        .hero-section {
+            margin: var(--spacing-5) 0;
+        }
         .title {
-            font-size: 3rem;
+            font-size: var(--text-6xl);
+        }
+
+        blockquote {
+            font-size: var(--text-3xl);
+        }
+    }
+
+    @media (max-width: 360px) {
+        .title {
+            font-size: var(--text-5xl);
+        }
+
+        blockquote {
+            font-size: var(--text-2xl);
         }
     }
 
